@@ -14,12 +14,12 @@
 1. Create database `deni_obs`
 2. Username `root`
 3. Password `123123`
-4. dump SQL in src/resouces/sql/..
+4. dump SQL in `src/resouces/sql/..`
 
 ### How to run - in development mode :
 
 1. copy file application.properties.example to application.properties
-1. open folder: `cd movic-core`
+1. open folder: `cd deni-obs`
 2. `mvn spring-boot:run -Dspring-boot.run.profiles=dev`
 
 ### How to run - with jar file:

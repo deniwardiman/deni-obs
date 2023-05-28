@@ -26,7 +26,7 @@
 
 1. open folder: `cd deni-obs`
 2. create jar file: `mvn clean install -DskipTests=true`
-3. run jar with: `java -jar -Dspring.profiles.active=dev target/deni-obs-0.0.1-SNAPSHOT.jar`
+3. run jar with: `java -jar -Dspring.profiles.active=dev target/deni-0.0.1.war`
 
 ### LOGIN
 1. username `deni.wardiman08@gmail.com`

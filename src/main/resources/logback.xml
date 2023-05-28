@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <timestamp key="timestamp" datePattern="yyyyMMdd"/>
+    <property name="LOG_PATH" value="/home/deni/movic/logs" />
+    <property name="FILENAME" value="movic-be-core" />
+    <property name="FILE_LOG_PATTERN" value="%d{HH:mm:ss} %5p - %-30.30logger{36} : %msg%n"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>${FILE_LOG_PATTERN}</Pattern>
+        </encoder>
+    </appender>
+
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${LOG_PATH}/${FILENAME}-${timestamp}.log</File>
+        <encoder>
+            <Pattern>${FILE_LOG_PATTERN}</Pattern>
+
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/${FILENAME}-%d{yyyy-MM-dd}.log</fileNamePattern>-->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+
+    <root level="INFO" >
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+
+    <logger name="org.springframework.web" level="DEBUG "/>
+</configuration>

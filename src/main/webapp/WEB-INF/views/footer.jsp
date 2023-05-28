@@ -4,6 +4,6 @@
     <div class="pull-right hidden-xs">
         <b>Version</b> 1.0.0
     </div>
-    <strong>Copyright &copy; 2018 <a href="${pageContext.request.contextPath}">Astra Internasional - Movic</a>.</strong> All rights
+    <strong>Copyright &copy; 2023 <a href="${pageContext.request.contextPath}">DENI - OBS</a>.</strong> All rights
     reserved.
 </footer>
